@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAQUILLAJE</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<header class="header">
+<h1>MAQUILLAJE</h1>
+<p>Práctica 2 - Sub 2</p>
+</header>
+
+<section class="perfil">
+<h2>ES LA MEJOR OPCIÓN</h2>
+<p>PRODUCTOS DE CALIDAD</p>
+</section>
+
+<nav class="menu">
+<button onclick="mostrarSeccion('INICIO')">🏠 Inicio</button>
+<button onclick="mostrarSeccion('MENU')">💄 Menú</button>
+<button onclick="mostrarSeccion('ESPECIAL')">📞 Contactos</button>
+</nav>
+
+<main>
+
+<!-- INICIO -->
+<section id="INICIO" class="seccion activa">
+<h2>Bienvenido</h2>
+<p>Esta app muestra un menú de productos de maquillaje.</p>
+
+<div class="card">
+<h3>Horario de Atención</h3>
+<p>Lunes a Viernes</p>
+<p>8:00 am a 2:00 pm</p>
+</div>
+</section>
+
+<!-- MENU -->
+<section id="MENU" class="seccion">
+<h2>Productos del Día</h2>
+
+<div class="card">
+<h3>💄 Base Líquida</h3>
+<p>$180</p>
+<button onclick="comprar('Base Líquida',180)">Comprar</button>
+</div>
+
+<div class="card">
+<h3>✨ Rímel</h3>
+<p>$120</p>
+<button onclick="comprar('Rímel',120)">Comprar</button>
+</div>
+
+<div class="card">
+<h3>💋 Labial Mate</h3>
+<p>$150</p>
+<button onclick="comprar('Labial Mate',150)">Comprar</button>
+</div>
+
+<button class="volver" onclick="mostrarSeccion('INICIO')">⬅ Volver</button>
+</section>
+
+<!-- CONTACTO -->
+<section id="ESPECIAL" class="seccion">
+<h2>Contacto</h2>
+
+<div class="card">
+<p>Encargado: María López</p>
+<p>Ubicación: Edificio A - Local 5</p>
+<p>Teléfono: 722 000 0000</p>
+</div>
+
+<button class="volver" onclick="mostrarSeccion('INICIO')">⬅ Volver</button>
+
+</section>
+
+</main>
+
+<footer class="footer">
+<span>💄</span>
+<span>✨</span>
+<span>📞</span>
+</footer>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
